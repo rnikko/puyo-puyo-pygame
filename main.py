@@ -364,15 +364,15 @@ while run:
 
                 score += chain_score
 
-                # if chain_score > 0:
-                #     print(f"Chain: {chain}")
-                #     print(f"Cleared in Chain: {PC}")
-                #     print(f"Chain Power: {CP}")
-                #     print(f"Color Bonus: {CB} {colors_cleared}")
-                #     print(f"Group Power: {GB}")
-                #     print(f"Score Multiplier: {score_multiplier}")
-                #     print(f"Score Calc: (10 * {PC}) * ({CP} + {CB} + {GB})")
-                #     print(f"Chain Score: {chain_score}")
+                if chain_score > 0:
+                    print(f"Chain: {chain}")
+                    print(f"Cleared in Chain: {PC}")
+                    print(f"Chain Power: {CP}")
+                    print(f"Color Bonus: {CB} {colors_cleared}")
+                    print(f"Group Power: {GB}")
+                    print(f"Score Multiplier: {score_multiplier}")
+                    print(f"Score Calc: (10 * {PC}) * ({CP} + {CB} + {GB})")
+                    print(f"Chain Score: {chain_score}")
 
             # update display after we drop puyos
             display()
