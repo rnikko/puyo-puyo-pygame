@@ -290,6 +290,9 @@ while run:
                 pass
 
             else:
+                if piece.mp_y <= 2:
+                    raise Exception("GAME OVER")
+
                 # undo mp_y += 1
                 piece.undo()
 
