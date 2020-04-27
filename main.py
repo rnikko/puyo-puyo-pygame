@@ -333,6 +333,7 @@ while run:
                 checked = [[False for c in range(0, FIELD_W)] for r in range(0, FIELD_H)]
 
                 PC = 0
+                GB = 0
                 colors_cleared = []
                 chain += 1
 
@@ -361,7 +362,6 @@ while run:
 
                 CP = 999 if chain >= 15 else CHAIN_POWER[chain]
                 CB = COLOR_BONUS[len(colors_cleared)]
-                GB = 0
                 score_multiplier = 1 if (CP + CB + GB) == 0 else CP + CB + GB
                 chain_score = (PC * 10) * (score_multiplier)
 
