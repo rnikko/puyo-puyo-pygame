@@ -1,7 +1,7 @@
 from random import choice
 
 
-SUB_POS = [(0, -1), (-1, 0), (0, 1), (1, 0)]
+SUB_POS = [(0, -2), (-2, 0), (0, 2), (2, 0)]
 TXT_COLOR = ["R",  "G",  "B",  "P",  "Y"]
 RGB_COLOR = [
     (255, 0, 0), (0, 255, 0),
@@ -17,11 +17,11 @@ class Piece:
 
         self._angle = 0
 
-        self._mp_y = 1
-        self._mp_x = 3
+        self._mp_y = 3
+        self._mp_x = 6
 
-        self.sp_y = 0
-        self.sp_x = 3
+        self.sp_y = 1
+        self.sp_x = 6
 
         self.prev_angle = self._angle
         self.prev_mp_y = self._mp_y
@@ -88,6 +88,7 @@ class Piece:
     @property
     def mp_x(self):
         return self._mp_x
+
     @mp_x.setter
     def mp_x(self, new_val):
         self.set_prev()
